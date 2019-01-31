@@ -4,7 +4,11 @@ Designing a "cool" project using Google's geocoding API as well as Accuweather's
 
 Team Members:
 Maamar Bousseloub
+
 Zach Essel
+
 Kevin Esslinger
+
 Jake Lawrence
+
 Viet Pham
