@@ -7,7 +7,7 @@ import time
 # Obviously the hardcoded url won't work but I didn't want to deal with the text parsing
 # you can change travel type like we talked about
 
-my_distance_key =  'AIzaSyC6L6mFd0Uu5NDC9RGU6VTbnFV-71aMmA4' 
+my_distance_key =  '' 
 google_url = 'https://maps.googleapis.com/maps/api/distancematrix/json?origins=1400+John+F+Kennedy+Blvd,+Philadelphia,+PA+191907&destinations=1925+N+12th+St,+Philadelphia,+pa+19122&key='
 distance_json_result = json.load(urllib.request.urlopen(google_url+my_distance_key))
 
@@ -22,7 +22,7 @@ arrival_time_epoch = round((time.time() + time_taken) / 3600) * 3600
 # I figured the zip code was the best way for us to search.  If you run this
 # you should put your own key in because I think there are only 50 a day
 
-accuweather_key = '6OzfzYQSMUIq7ECpUPmXdwRTDRbqlSbC'
+accuweather_key = ''
 accuweather_locationID_url = 'http://dataservice.accuweather.com/locations/v1/postalcodes/search?apikey=' + accuweather_key + '&q=19112'
 locationID_json_result = json.load(urllib.request.urlopen(accuweather_locationID_url))
 locationID = locationID_json_result[0]['Key']
